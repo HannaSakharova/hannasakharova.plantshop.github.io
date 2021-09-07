@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "20833";
+  font-display: swap;
+  src: url("../fonts/20833.woff") format("woff"), url("../fonts/20833.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "20870";
+  font-display: swap;
+  src: url("../fonts/20870.woff") format("woff"), url("../fonts/20870.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-size: 18px;
+  color: crimson;
+}
+
+p {
+  color: salmon;
+  border: 1px solid rosybrown;
+}
+
+div {
+  color: #2541e2;
+  border: 1px solid #9fbc8f;
+  background: url("../img/Sunrises_and_sunsets_487779.jpg") 0 0 no-repeat;
+}
+
+@media (max-width: 1024px) {
+  p {
+    color: gold;
+  }
+
+  div {
+    color: blueviolet;
+  }
+}
+
+.webp div { background: url(../img/Sunrises_and_sunsets_487779.webp) 0 0 no-repeat; }
