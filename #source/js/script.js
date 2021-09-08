@@ -39,6 +39,9 @@ if (iconMenu) {
 	});
 }
 
+//Slider
+$('.home-slider').slick();
+
 // function ibg() {
 // 	if (isIE()) {
 // 		let ibg = document.querySelectorAll(".ibg");

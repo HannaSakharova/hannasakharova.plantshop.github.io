@@ -1,4 +1,48 @@
 //<FORM>==============================================================================================
+.search-form {
+	position: relative;
+	width: 200px;
+	height: 35px;
+
+	&__input {
+		height: 35px;
+		width: 0;
+		padding: 0 25px 0 15px;
+		border: none;
+		border-bottom: 2px solid transparent;
+		outline: none;
+		background: transparent;
+		transition: 0.4s cubic-bezier(0, 0.8, 0, 1);
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 2;
+		font-size: 16px;
+		line-height: 24px;
+		color: #2c1500;
+		opacity: 0.8;
+		cursor: pointer;
+		&:focus {
+			width: 200px;
+			z-index: 1;
+			border-bottom: 2px solid #156963;
+			cursor: auto;
+		}
+	}
+	&__btn {
+		background: transparent;
+		border: none;
+		height: 35px;
+		width: 35px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		cursor: pointer;
+		&:before {
+			content: url(../img/icons/search.png);
+		}
+	}
+}
 
 //</FORM>=============================================================================================
 

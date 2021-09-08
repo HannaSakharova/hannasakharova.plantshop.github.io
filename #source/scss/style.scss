@@ -20,7 +20,7 @@ $fontfamily: "Montserrat", sans-serif;
 
 //<ПЕРЕМЕННЫЕ>===========================================================================================
 $minwidth: 320px;
-$mw: 1170;
+$mw: 1168;
 $md1: $mw + 12;
 $md2: 991.98;
 $md3: 767.98;
@@ -30,7 +30,7 @@ $md4: 479.98;
 //<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===========================================================================
 @import "null.scss";
 body {
-	color: #000;
+	color: #2c1500;
 	font-size: 14px;
 	&.lock {
 		overflow: hidden;
@@ -69,6 +69,7 @@ body {
 //<ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>=================================================
 @import "forms";
 @import "ui";
+@import "slider";
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>================================================
 
 //<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>========================================================
@@ -79,9 +80,195 @@ body {
 
 //<ОСНОВНОЙ БЛОК>========================================================================================
 .page {
-	color: purple;
-	font-size: 30px;
 }
 //=======================================================================================================
+.home {
+	// height: 100vh;
+	&__content {
+		position: relative;
+	}
+	&__body {
+		display: flex;
+		justify-content: center;
+	}
+	&__column {
+	}
+}
+.home-img {
+}
+.home-info {
+	&__text {
+		max-width: 65%;
+		margin: 0 auto;
+	}
+	&__title {
+		font-weight: 500;
+		font-size: 68px;
+		line-height: 83px;
+		color: #156963;
+		margin: 150px 0px 24px 0px;
+	}
+	&__description {
+		font-size: 18px;
+		line-height: 32px;
+		opacity: 0.8;
+	}
+	&__btn {
+		display: flex;
+		justify-content: center;
+	}
+}
+.btn-home {
+	position: absolute;
+	bottom: 0px;
 
+	&__body {
+		flex: 0 0 320px;
+		padding: 38px 49px;
+		cursor: pointer;
+		&:hover {
+			background-color: #156963;
+			.btn-home__prev {
+				color: #e0dbdb;
+			}
+			.btn-home__next {
+				color: #e0dbdb;
+			}
+			.btn-home__title {
+				color: #fff;
+			}
+		}
+	}
+	&__prev {
+		position: relative;
+		padding: 0px 0px 0px 34px;
+		&:before {
+			content: "\2794";
+			position: absolute;
+			top: 0;
+			left: 0;
+			transform: rotate(180deg);
+		}
+	}
+	&__next {
+		position: relative;
+		padding: 0px 34px 0px 0px;
+		&:after {
+			content: "\2794";
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+	}
+	&__title {
+		font-weight: 500;
+		font-size: 32px;
+		line-height: 39px;
+		color: #156963;
+	}
+}
+.btn-home__prev,
+.btn-home__next {
+	background-color: transparent;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 29px;
+	color: #3333338e;
+	margin: 0px 0px 13.5px 0px;
+	transition: all 0.3s ease 0s;
+}
+//=======================================================================================================
+.benefits {
+	padding: 140px 0px 80px 0px;
+	&__body {
+		display: flex;
+		margin: 0 -15px;
+	}
+	&__column {
+		padding: 0 15px;
+		flex: 0 1 25%;
+	}
+	&__item {
+		border: 1px solid #e0e0e0;
+		padding: 21px 16px;
+		height: 100%;
+	}
+	&__item-column {
+		display: flex;
+		align-items: center;
+		margin: 0px 0px 16px 0px;
+	}
+	&__item-icon {
+	}
+	&__item-title {
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 24px;
+		color: #156963;
+		margin: 0px 0px 0px 16px;
+	}
+	&__item-text {
+		font-size: 12px;
+		line-height: 18px;
+	}
+}
+//=======================================================================================================
+.features {
+	padding: 0px 0px 80px 0px;
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0px 0px 16px 0px;
+		margin: 0px 0px 24px 0px;
+		border-bottom: 1px solid #e0e0e0;
+	}
+	&__header-title {
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		color: #000000;
+	}
+	&__header-tabs {
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 15px;
+		color: #000000;
+	}
+	&__body {
+	}
+	&__body-content {
+	}
+}
+.features-content {
+	display: flex;
+	margin: 0 -10px;
+	&__column {
+		padding: 0 10px;
+		flex: 0 1 20%;
+	}
+	&__item {
+		text-align: center;
+	}
+	&__img {
+		max-width: 217px;
+		max-height: 217px;
+	}
+	&__title {
+		font-size: 16px;
+		line-height: 20px;
+		margin: 16px 0px 8px 0px;
+		a {
+			color: #000000;
+		}
+	}
+	&__idr {
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 20px;
+		color: #000000;
+	}
+}
+//=======================================================================================================
+//=======================================================================================================
 //</ОСНОВНОЙ БЛОК>=======================================================================================

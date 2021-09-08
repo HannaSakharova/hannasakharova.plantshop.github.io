@@ -1,5 +1,50 @@
 header {
 }
 //====================================================================================================
-
+.header {
+	padding: 40px 0px 0px 0px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 11;
+	&__content {
+	}
+	&__body {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__column {
+	}
+}
+.header-nav {
+	&__body {
+		display: flex;
+		align-items: center;
+	}
+	&__search {
+		margin: 0px 20px 0px 0px;
+		cursor: pointer;
+		@media (min-width: $md2 + px) {
+			flex: 1 1 auto;
+		}
+	}
+	&__cart {
+		margin: 0px 10px 0px 0px;
+	}
+	&__btn {
+		font-family: "Nunito", sans-serif;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 20px;
+		color: #156963;
+		padding: 8px 29.5px;
+		text-align: center;
+		transition: all 0.3s ease 0s;
+		&:hover {
+			background-color: #156963;
+			color: #fff;
+		}
+	}
+}
 //====================================================================================================
